@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_upload_server_address"
+        android:inputType=""
+        android:key="@string/pref_key_upload_server_address"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_upload_server_address" />
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_device_id"
+        android:inputType=""
+        android:key="@string/pref_key_device_id"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_device_id" />
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_arduino_server_address"
+        android:inputType=""
+        android:key="@string/pref_key_arduino_server_address"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_arduino_server_address" />
+
+    <!--
+         NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it.
+    -->
+
+</PreferenceScreen>

@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context=".MainActivity" >
+
+ <TextView
+     android:id="@+id/tv_real_max_temp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignBottom="@+id/tv_lim_max_temp"
+     android:layout_alignParentRight="true"
+     android:textColor="#FF0000"
+     android:textStyle="bold" />
+
+ <TextView
+     android:id="@+id/tv_real_min_temp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignBaseline="@+id/tv_lim_min_temp"
+     android:layout_alignBottom="@+id/tv_lim_min_temp"
+     android:layout_alignLeft="@+id/tv_real_max_temp"
+     android:textColor="#0000FF"
+     android:textStyle="bold" />
+
+ <TextView
+     android:id="@+id/label_real_values"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignBaseline="@+id/label_current_temperature"
+     android:layout_alignBottom="@+id/label_current_temperature"
+     android:layout_alignRight="@+id/tv_real_min_temp"
+     android:text="@string/real_values"
+     android:textStyle="bold" />
+
+ <TextView
+     android:id="@+id/tv_lim_max_temp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+     android:textColor="#FF0000"
+     android:textStyle="bold" />
+
+ <TextView
+     android:id="@+id/tv_current_temp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignTop="@+id/tv_lim_max_temp"
+     android:layout_centerHorizontal="true"
+     android:textSize="35sp"
+     android:textStyle="bold" />
+
+ <TextView
+     android:id="@+id/tv_lim_min_temp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignBottom="@+id/tv_current_temp"
+     android:layout_alignParentLeft="true"
+     android:textColor="#0000FF"
+     android:textStyle="bold" />
+
+ <Switch
+     android:id="@+id/service_running"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_below="@+id/label_lid"
+     android:layout_marginTop="18dp"
+     android:text="@string/service_running"
+     android:textOff="@string/off"
+     android:textOn="@string/on" />
+
+ <Button
+     android:id="@+id/btn_view_plot"
+     android:layout_width="125dp"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/service_running"
+     android:layout_marginTop="18dp"
+     android:layout_centerHorizontal="true"
+     android:onClick="startPlotActivity"
+     android:text="@string/view_plot" />
+
+ <TextView
+     android:id="@+id/label_lid"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/label_current_temperature"
+     android:layout_marginTop="20dp"
+     android:layout_centerHorizontal="true"
+     android:text="@string/lid_closed"
+     android:textSize="24sp" />
+
+ <TextView
+     android:id="@+id/label_current_temperature"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignBaseline="@+id/label_limits"
+     android:layout_alignBottom="@+id/label_limits"
+     android:layout_centerHorizontal="true"
+     android:text="@string/current_temperature_label"
+     android:textStyle="bold" />
+
+ <TextView
+     android:id="@+id/label_limits"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignLeft="@+id/tv_lim_min_temp"
+     android:layout_below="@+id/tv_lim_min_temp"
+     android:layout_marginTop="14dp"
+     android:text="@string/temp_limits"
+     android:textStyle="bold" />
+
+</RelativeLayout>

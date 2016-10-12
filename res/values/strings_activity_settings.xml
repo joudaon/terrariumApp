@@ -1,0 +1,75 @@
+<resources>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- General (server) settings -->
+    <string name="pref_header_general">Servers</string>
+	<string name="pref_default_upload_server_address">http://json.internetdelascosas.es/arduino/getlast.php</string>
+	<string name="pref_title_upload_server_address">Upload server address</string>
+	<string name="pref_key_upload_server_address">upload_server_address</string>
+	<string name="pref_default_device_id">8888</string>
+	<string name="pref_title_device_id">Device ID</string>
+	<string name="pref_key_device_id">device_id</string>
+	<string name="pref_default_arduino_server_address">not set</string>
+	<string name="pref_title_arduino_server_address">Arduino address</string>
+	<string name="pref_key_arduino_server_address">arduino_server_address</string>
+	
+	
+	<!-- Data & Sync settings -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+    <string name="pref_default_sync_frequency">30</string>
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string name="pref_key_sync_frequency">sync_frequency</string>
+
+    <string-array name="pref_sync_frequency_titles">
+        <item>1 minute</item>
+        <item>5 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>1</item>
+        <item>5</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+	<string name="pref_default_num_items">20</string>
+	<string name="pref_title_num_items">Items</string>
+	<string name="pref_key_num_items">num_items</string>
+	
+	
+	<!-- visualization settings -->
+	<string name="pref_header_visualization">Visualization</string>
+	<string name="pref_default_minTemp">25</string>
+	<string name="pref_title_minTemp">Minimum tempterature (°C)</string>
+	<string name="pref_key_minTemp">minTemp</string>
+	<string name="pref_default_maxTemp">35</string>
+	<string name="pref_title_maxTemp">Maximum tempterature (°C)</string>
+	<string name="pref_key_maxTemp">maxTemp</string>
+	<string name="pref_description_show_limits"></string>
+	<string name="pref_title_show_limits">Show limits</string>
+	<string name="pref_key_show_limits">show_limits</string>
+	
+	<!--  notification settings -->
+    <string name="pref_header_notifications">Notifications</string>
+	<string name="pref_title_temperature_limits_notifications">Temperature limit notifications</string>
+	<string name="pref_key_temperature_limits_notifications">temperature_limits_notifications</string>
+	<string name="pref_title_lid_open_notifications">Open lid notifications</string>
+	<string name="pref_key_lid_open_notifications">lid_open_notifications</string>
+    <string name="pref_title_notifications_temperature_limits_ringtone">Ringtone</string>
+    <string name="pref_key_notifications_temperature_limits_ringtone">notifications_temperature_limits_ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_notifications_temperature_limits_vibrate">Vibrate</string>
+    <string name="pref_key_notifications_temperature_limits_vibrate">notifications_temperature_limits_vibrate</string>
+
+</resources>

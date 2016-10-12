@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Terrarium</string>
+    <string name="action_settings">Settings</string>
+    <string name="layout_main">Main</string>
+    <string name="current_temperature_label">Current temperature</string>
+    <string name="temperature">Current temperature</string>
+    <string name="temp_limits">Limits</string>
+    <string name="real_values">Real</string>
+    <string name="service_running">Background Service</string>
+    <string name="service_running_short">Service</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="view_plot">Plot</string>
+    <string name="lid_closed">Lid closed</string>
+    <string name="lid_open">Lid open!</string>
+    <string name="temperature_plot">Temperature Plot</string>
+    <string name="stopped">stopped</string>
+    <string name="started">started</string>
+    <string name="tickerLidNotification">Attention! Lid open!</string>
+    <string name="contentLidNotification">The lid was opened!</string>
+    <string name="tickerTemperatureHighNotification">Attention. High temperature.</string>
+    <string name="contentTemperatureHighNotification">The temperature is too high</string>
+    <string name="tickerTemperatureLowNotification">Attention. Low temperature.</string>
+    <string name="contentTemperatureLowNotification">The temperature is too low</string>
+
+</resources>

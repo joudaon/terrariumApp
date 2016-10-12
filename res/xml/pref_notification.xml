@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+         A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked.
+    -->
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_key_temperature_limits_notifications"
+        android:title="@string/pref_title_temperature_limits_notifications" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_key_lid_open_notifications"
+        android:title="@string/pref_title_lid_open_notifications" />
+
+    <!-- Allows the user to choose a ringtone in the 'notification' category. -->
+    <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+    <!-- NOTE: RingtonePreference's summary should be set to its value by the activity code. -->
+    <!--  android:dependency="notifications_temperature_limits" -->
+    <RingtonePreference
+        android:defaultValue="content://settings/system/notification_sound"
+        android:key="@string/pref_key_notifications_temperature_limits_ringtone"
+        android:ringtoneType="notification"
+        android:title="@string/pref_title_notifications_temperature_limits_ringtone" />
+
+    <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_key_notifications_temperature_limits_vibrate"
+        android:title="@string/pref_title_notifications_temperature_limits_vibrate" />
+
+</PreferenceScreen>
